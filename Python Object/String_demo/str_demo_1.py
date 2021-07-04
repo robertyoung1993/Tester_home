@@ -31,4 +31,6 @@ print(dir(S))
 # 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith',
 # 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 
-
+D = {'b':1, 'c':2, 'a':3}
+for key in sorted(D):
+    print(D[key])
