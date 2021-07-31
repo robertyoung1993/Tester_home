@@ -78,3 +78,27 @@ print(part.get_score())
 #
 # print(part.get_name())
 # print(part.get_score())
+
+# 双下划线开头的实例变量是不是一定不能从外部访问呢？其实也不是，不能直接访问__name是因为python解释器对外把__name变量变成_Student2__name,
+# 所以仍然可以通过__Student2__name来访问__name变量
+
+print(part._Student2__name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
