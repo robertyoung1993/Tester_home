@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>css_6</title>
+    <!-- 属性选择器 -->
+<!-- 
+        [属性名]选择含有指定属性的元素
+        [属性名=属性值]选择含有指定属性和属性值的元素 
+        [属性名^=属性值]选择含有属性值以指定值开头的元素
+        [属性名$=属性值]选择属性值以指定值结尾的元素
+        [属性名*=属性值]选择属性值中含有某值的元素的元素
+    -->
+    <style>
+        p[title]{
+            color: orange;
+        }
+        p[title=abc]{
+            color: orangered;
+        }
+        p[title^=abc]{
+            color: orchid;
+        }
+        p[title$=abc]{
+            color: palevioletred;
+        }
+        p[title*=e]{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <p title="abc">少小离家老大回</p>
+    <p title="abcde">乡音无改鬓毛衰</p>
+    <p title="hello">儿童相见不相识</p>
+    <p>笑问客从何处来</p>
+    <p>秋水共长天一色</p>
+    <p>落霞与鼓舞起飞</p>
+</body>
+</body>
+</html>

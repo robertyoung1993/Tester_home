@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>css_7</title>
+    <!-- 伪类选择器 -->
+    <style>
+        /* 将ul里的第一个li设置为红色 */
+
+        /* 伪类(不存在的类，特殊的类)
+            伪类用来描述一个元素的特殊状态
+                比如第一个子元素、被点击的元素、鼠标移入的元素～
+            伪类一般情况下都是使用:开头
+                :first-child  第一个子元素
+                :last-child   最后一个子元素
+                :nth-child()  选中第n个子元素
+                    特殊值：n 第n个 n的范围0到正无穷
+                         2n 表示偶数位的元素
+                         2n+1 或 odd 表示选中奇数位的元素
+                :first-of-type
+                :last-of-type
+                :nth-last-of-type()
+                :nth-of-type() 
+                
+                :not() 否定伪类
+                    将符合条件的元素从选择器中去除
+
+
+                */
+        /* ul > li:first-child{
+            color: red;
+        }
+        ul > li:last-child{
+            color: seagreen;
+        }
+        ul > li:nth-child(3){
+            color: greenyellow;
+        } */
+        ul > li:not(:nth-last-of-type(2)){
+            color: hotpink;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>第0个</li>
+        <li>第1个</li>
+        <li>第2个</li>
+        <li>第3个</li>
+        <li>第4个</li>
+        <li>第5个</li>
+        
+    </ul>
+</body>
+</html>
