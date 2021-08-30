@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>css_9</title>
+    <!-- 伪元素选择器 -->
+    <style>
+        p{
+            font-size: 30px;
+        }
+
+        /* 伪元素：表示网页中一些特殊的并不真实存在的元素(特殊的位置)
+            伪元素使用  ::开头
+
+            ::first-letter 表示第一个字母
+            ::first-line 表示第一行
+            ::selection 表示选中的内容
+            ::before 元素的开始
+            ::after 元素的最后
+                - ::before 和 ::after 必须结合content属性来使用 */
+
+        p::first-letter{
+            font-size: 50px;
+        }
+
+        p::first-line{
+            background-color: yellow;
+        }
+
+        p::selection{
+            background-color: greenyellow;
+        }
+
+        /* div::before{
+            content: 'abc';
+            color: red;
+        }
+
+        div::after{
+            content: 'hah';
+            color: greenyellow;
+        } */
+
+        div::before{
+            content: '「';
+        }
+
+        div::after{
+            content: '」';
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello world! how are you
+    </div>
+    <p>
+        I think I will spend six months to concentrate on one thing and stick to it all the time. 
+        I hope I can get what I want in the end
+    </p>
+</body>
+</html>
